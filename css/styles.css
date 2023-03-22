@@ -15,6 +15,7 @@
     --brand-background-light-box : #F5F4FA;
     --brand-background-white: var(--brand-color-white);
     --brand-radius: 4px;
+    --brand-transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -598,7 +599,7 @@ display: flex;
 }
 
 .project-item {
-
+    cursor: pointer;
 }
 
 .project-item:hover {
@@ -612,7 +613,7 @@ display: flex;
     position: relative;
     width: 370px;
     height: 294px;
-    cursor: pointer;
+    overflow: hidden;
 }
 
 .project-photo > img {
@@ -652,8 +653,14 @@ display: flex;
     color: var(--brand-color-white);
     font-size: 18px;
     line-height: 1.6;
-    padding-left: 25px;
-    padding-right: 25px;       
+    padding: 0 25px;
     letter-spacing: 0.03em;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: var(--brand-transition-transform);
 }
 
+.project-item:hover .project-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
