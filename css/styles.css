@@ -463,6 +463,50 @@ display: flex;
     margin: 16px 32px;
 }
 
+/* BACKDROP */
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal { 
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background-color: rgb(189, 29, 29);
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
 /* *************** portfolio.html *************** */
 
 /* SECTION FILTERS */
