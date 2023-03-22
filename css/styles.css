@@ -367,7 +367,29 @@ display: flex;
 }
 
 .offer-item {
-    
+    position: relative;
+}
+
+.offer-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--brand-color-white);
+        
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-top: 27.5px;
+        padding-bottom: 27.5px;
+        background-color: rgba(47, 48, 58, 0.8);
+}
+
+.offer-item > img {
+    vertical-align: middle;
 }
 
 /* SECTION TEAM */
