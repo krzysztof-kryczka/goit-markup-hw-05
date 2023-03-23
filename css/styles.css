@@ -243,7 +243,7 @@ display: flex;
 
 .footer-social-icon {
     fill: var(--brand-color-white);
-    transition: background-color 250ms var(--brand-function-cubic);
+    /* transition: background-color 250ms var(--brand-function-cubic); */
 }
 
 .footer-social-link:is(:hover, :focus) {
@@ -539,7 +539,7 @@ display: flex;
     position: absolute;
     width: 528px;
     height: 581px;
-    background-color: rgb(189, 29, 29);
+    background-color: var(--brand-color-white);
     box-shadow: 
         0px 1px 3px rgba(0, 0, 0, 0.12), 
         0px 1px 1px rgba(0, 0, 0, 0.14), 
